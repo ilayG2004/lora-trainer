@@ -63,7 +63,7 @@ lora_config = LoraConfig(
 model = get_peft_model(model, lora_config)
 model.print_trainable_parameters()
 
-dataset = load_dataset("json", data_dir="./data", data_files={
+dataset = load_dataset("json", data_dir="./data/run2", data_files={
     "train": "train.jsonl",
     "validation": "val.jsonl",
     "test": "test.jsonl"
